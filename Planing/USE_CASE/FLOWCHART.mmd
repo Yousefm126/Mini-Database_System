@@ -1,0 +1,22 @@
+
+flowchart LR
+
+    subgraph Database system
+        direction TB
+        Create_Tabels([Create_Tabels])
+        Clear_Tabels([Clear_Tabels]) 
+        Update_Record([Update_Record])
+        Delete_Record([Delete_Record])
+        Search_Record([Search_Record])
+        Show_Record([Show_Record])
+        Inseart_Record([Inseart_Record])
+        
+  end
+
+Database_Designer --- Create_Tabels ---   Server[(Database Server)]
+Database_Designer --- Clear_Tabels  ---   Server[(Database Server)]
+Database_Entery ---Inseart_Record   ---   Server[(Database Server)]
+Database_Entery ---Update_Record    ---   Server[(Database Server)]
+Database_Entery ---Delete_Record    ---   Server[(Database Server)]
+Database_Entery ---Search_Record    ---   Server[(Database Server)]
+Database_Entery ---Show_Record  ---   Server[(Database Server)]
